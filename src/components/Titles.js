@@ -10,6 +10,6 @@ class Titles extends React.Component{
             </div>
         );
     }
-}
+};
 
 export default Titles;

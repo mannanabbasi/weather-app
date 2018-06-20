@@ -35,17 +35,30 @@ class App extends React.Component{
     //wait for the call to complete and store its value in data
     const data = await api_call.json();
 
-    //set the values in state object
-    this.setState({
-      temperature :data.main.temp,
-      city : data.name,
-      country : data.sys.country,
-      humidity: data.main.humidity,
-      description :data.weather[0].description,
-      error:""
-    })
+    //check for the value of city and country attribute
+    if(city && country){
+      //set the values in state object
+      this.setState({
+        temperature :data.main.temp,
+        city : data.name,
+        country : data.sys.country,
+        humidity: data.main.humidity,
+        description :data.weather[0].description,
+        error:""
+      });
+    }
+    else {
+      //set the values in state object
+      this.setState({
+        temperature :undefined,
+        city : undefined,
+        country : undefined,
+        humidity: undefined,
+        description :undefined,
+        error:"Please enter a value"
+      }); 
+    }
 
-    console.log(data);
   }
 
 

@@ -18,22 +18,21 @@
 
 .userInput button{
    
-    padding: 10px 15px;
-    background: #20265d;
+    padding: 8px 7%;
+   /* background: #20265d;*/
+   background: #eae3ea;
     border: 0;
     border-radius: 30px;
-    color: white;
+    color: rgb(12, 11, 11);
     text-align: center;
-    box-shadow: 1px 1px 10px 1px #ffe27d;
+    box-shadow: 1px 1px 5px 1px #ffe27d;
     display: block;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     font-family: 'Ubuntu Mono', monospace;
     margin: auto;
     margin-top: 50px;
     cursor: pointer;
 }
 
-.userInput button a {
-    text-decoration:none;
-    color:white;
-    }
+

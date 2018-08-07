@@ -9,13 +9,11 @@ html{
 
 
 
-body {
-  font-family: sans-serif;
-  
-}
+
 .container .wrapper{
   
-  margin: auto;
+  margin:auto;
   width: 50%;
+  padding-top: 1%;
   text-align: center;
 }

@@ -1,10 +1,9 @@
 import React from "react";
+import '../title.css';
 
 const Titles = ()=>(
-    <div>
-        <h1>Weather finder</h1>
-        <p> Find out temperature, conditions and More</p>
-
+    <div className= "title">
+        <h1>Weather Finder</h1>
     </div>
 ) 
 

@@ -1,0 +1,37 @@
+
+.dashboard{
+   
+    background-color: blueviolet;
+    width: 50%;
+    margin: auto;
+    border-radius: 25px;
+    padding-bottom: 5px;
+
+}
+
+.dashboard h1{
+    font-size: 35px;
+    padding-top: 20px;
+    font-family: 'Noto Serif', serif;
+
+}
+.dashboard #temp{
+    font-size: 50px;;
+    color: ghostwhite;
+    font-family: 'Ubuntu Mono', monospace;
+
+}
+
+.dashboard #condition{
+    text-transform: capitalize;
+    color:#181820;
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+.dashboard p{
+    /*8*/
+   
+    color: black;
+    
+}

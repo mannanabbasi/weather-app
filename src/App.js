@@ -30,7 +30,7 @@ class App extends React.Component{
     const country = e.target.elements.country.value;
     
     //make call to api
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`);
+    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${API_KEY}`);
 
     //wait for the call to complete and store its value in data
     const data = await api_call.json();
@@ -69,7 +69,9 @@ class App extends React.Component{
         <div className = "wrapper">
           <Titles/>
           <Form getWeather = {this.getWeather}/>
-          <Weather className = "dashboard"
+        </div>
+        <div className = "dashboardContent">
+        <Weather 
             temperature = {this.state.temperature}
             city = {this.state.city}
             country = {this.state.country}
@@ -77,7 +79,6 @@ class App extends React.Component{
             description ={this.state.description}
             error = {this.state.error}
           />
-
         </div>
       </div>
     );

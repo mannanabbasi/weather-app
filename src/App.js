@@ -14,6 +14,7 @@ class App extends React.Component{
     city: undefined,
     country : undefined,
     description : undefined,
+    icon : undefined,
     error : undefined
     
 
@@ -41,6 +42,7 @@ class App extends React.Component{
         temperature :data.main.temp,
         city : data.name,
         country : data.sys.country,
+        icon : data.weather[0].icon,
         description :data.weather[0].description,
         error:""
       });
@@ -51,6 +53,7 @@ class App extends React.Component{
         temperature :undefined,
         city : undefined,
         country : undefined,
+        icon: undefined,
         description :undefined,
         error:"Please enter a value"
       }); 
@@ -70,6 +73,7 @@ class App extends React.Component{
             temperature = {this.state.temperature}
             city = {this.state.city}
             country = {this.state.country}
+            icon = {this.state.icon}
             description ={this.state.description}
             error = {this.state.error}
           />

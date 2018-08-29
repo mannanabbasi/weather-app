@@ -15,7 +15,8 @@ class App extends React.Component{
     country : undefined,
     description : undefined,
     icon : undefined,
-    error : undefined
+    error : undefined,
+    hasLoaded : false
     
 
   }
@@ -44,6 +45,7 @@ class App extends React.Component{
         country : data.sys.country,
         icon : data.weather[0].icon,
         description :data.weather[0].description,
+        hasLoaded : true,
         error:""
       });
     }
@@ -55,7 +57,8 @@ class App extends React.Component{
         country : undefined,
         icon: undefined,
         description :undefined,
-        error:"Please enter a value"
+        error:"Please enter a value",
+        hasLoaded:false
       }); 
     }
 
@@ -76,7 +79,9 @@ class App extends React.Component{
             icon = {this.state.icon}
             description ={this.state.description}
             error = {this.state.error}
-          />
+            hasLoaded = {this.state.hasLoaded}
+            />
+          
         </div>
         
       </div>

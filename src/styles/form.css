@@ -1,0 +1,38 @@
+.userInput input {
+    
+    border: none;
+    border-bottom: 2px solid ghostwhite;
+    width: 50%;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 5%;
+    opacity: 0.9;
+    outline: 0;
+    font-size: 20px;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    background: none;
+    box-shadow:0px 1px #e1bec4;;
+}
+
+.userInput button{
+   
+    padding: 8px 7%;
+   /* background: #20265d;*/
+   background: #eae3ea;
+    border: 0;
+    border-radius: 30px;
+    color: rgb(12, 11, 11);
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px #ffe27d;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom:50px; 
+    cursor: pointer;
+}
+
+

@@ -1,22 +1,22 @@
 import React from "react";
 import '../styles/weather.css';
 
-const Weather = (props) => {
+const Weather = ({city, country,hasLoaded, temperature, icon, description,error}) => {
     
-    if(props.hasLoaded){
+    if(hasLoaded){
         return ( <div className = "dashboard">
-        {props.city && props.country && <h1>{props.city}, {props.country}</h1>}
-        {props.temperature && <p><span id = "temp"> {props.temperature}°C</span> <img className="img" src={`https://openweathermap.org/img/w/${props.icon}.png`} alt = "weathericon"/>
+        {city && country && <h1>{city}, {country}</h1>}
+        {temperature && <p><span id = "temp"> {temperature}°C</span> <img className="img" src={`https://openweathermap.org/img/w/${icon}.png`} alt = "weathericon"/>
 </p>}
         
         
-        {props.description && <p><span id = "condition"> {props.description}</span></p>}
+        {description && <p><span id = "condition"> {description}</span></p>}
            
     </div>
     )
     }
     else{
-        return(<div>{props.error && <p>{props.error}</p>}</div> )
+        return(<div>{error && <p>{error}</p>}</div> )
     }
 
 }

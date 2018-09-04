@@ -6,7 +6,7 @@ const Weather = (props) => {
     if(props.hasLoaded){
         return ( <div className = "dashboard">
         {props.city && props.country && <h1>{props.city}, {props.country}</h1>}
-        {props.temperature && <p><span id = "temp"> {props.temperature}°C</span> <img className="img" src={`http://openweathermap.org/img/w/${props.icon}.png`} alt = "weathericon"/>
+        {props.temperature && <p><span id = "temp"> {props.temperature}°C</span> <img className="img" src={`https://openweathermap.org/img/w/${props.icon}.png`} alt = "weathericon"/>
 </p>}
         
         

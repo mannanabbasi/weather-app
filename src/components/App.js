@@ -31,7 +31,7 @@ class App extends React.Component{
     const country = e.target.elements.country.value;
     
     //make call to api
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${API_KEY}`);
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${API_KEY}`);
 
     //wait for the call to complete and store its value in data
     const data = await api_call.json();
